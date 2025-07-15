@@ -20,7 +20,7 @@
     "zod": "^3.25.76",
     "drizzle-zod": "^0.8.2",
     "lucide-react": "^0.525.0",
-    "@hookform/resolver":"^5.1.1",
+    "@hookform/resolvers":"^5.1.1",
     "@tanstack/react-query": "^5.83.0",
     "wouter":"^3.7.1",
     "react-hook-form": "^7.60.0",
