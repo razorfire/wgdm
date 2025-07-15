@@ -33,6 +33,7 @@
     "grapesjs-tui-image-editor": "^1.0.2",
     "grapesjs-typed": "^2.0.1",
     "grapesjs-style-bg": "^2.0.2",
+    "clsx":"2.1.1",
     "vite": "^7.0.4",
     "@vitejs/plugin-react": "^4.6.0"
   },
@@ -54,6 +55,7 @@
     "tailwindcss": "^4.1.11",
     "postcss": "^8.5.6",
     "@tailwindcss/postcss": "^4.0.0-alpha.13",
+    "tailwind-merge":"^3.3.1",    
     "autoprefixer": "^10.4.21"    
   }
 }
