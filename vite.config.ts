@@ -9,6 +9,7 @@ export default defineConfig({
     outDir: "../dist",
     emptyOutDir: true,
   },
+  
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client/src"),
@@ -18,5 +19,10 @@ export default defineConfig({
   server: {
     port: 5173,
     host: "0.0.0.0",
+     fs: {
+      // Allow serving files from one level up to the project root
+      allow: ['..'],
+    },
+
   },
 });
