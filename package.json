@@ -4,7 +4,7 @@
   "description": "A modern personal content management system built with JavaScript",
   "main": "server/index.ts",
   "scripts": {
-    "start": "node server/index.ts",
+    "start": "ts-node server/index.ts",
     "dev": "concurrently \"tsx server/index.ts\" \"vite\"",
     "build": "vite build",
     "build:server": "tsc server/index.ts --outDir dist-server --module commonjs --target es2020 --moduleResolution node --esModuleInterop true --allowSyntheticDefaultImports true",
@@ -35,7 +35,8 @@
     "grapesjs-style-bg": "^2.0.2",
     "clsx":"2.1.1",
     "vite": "^7.0.4",
-    "@vitejs/plugin-react": "^4.6.0"
+    "@vitejs/plugin-react": "^4.6.0",
+    "ts-node": "^10.9.2"
   },
   "peerDependencies": { 
     "react": "^19.1.0"
