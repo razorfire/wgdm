@@ -11,10 +11,12 @@ export default defineConfig({
   },
   
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./client/src"),
-      "@shared": path.resolve(__dirname, "./shared"),
-    },
+    alias: [
+      // "@": path.resolve(__dirname, "./client/src"),
+      //"@shared": path.resolve(__dirname, "./shared"),
+       { find: '@', replacement: path.resolve(__dirname, './client/src') },
+       { find: '@shared', replacement: path.resolve(__dirname, './shared') },
+    ],
   },
   server: {
     port: 5173,
