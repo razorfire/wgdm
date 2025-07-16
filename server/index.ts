@@ -20,9 +20,9 @@ const storage = new MemStorage();
 app.use(createRoutes(storage));
 
 // Health check
-app.get("/health", (_req, res) => {
-  res.json({ status: "ok", timestamp: new Date().toISOString() });
-});
+ app.get("/health", (_req, res) => {
+   res.json({ status: "ok", timestamp: new Date().toISOString() });
+ });
 
 // Setup static file serving for production
 setupStaticFiles(app);

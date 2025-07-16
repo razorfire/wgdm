@@ -11,7 +11,7 @@ export function setupStaticFiles(app: express.Application) {
   app.use(express.static(distPath));
 
   // Serve index.html for all non-API routes (SPA routing)
-  app.get('*', (req, res, next) => {
+  app.get(/(.*)/, (req, res, next) => {
     if (req.path.startsWith('/api/')) {
       return next();
     }
