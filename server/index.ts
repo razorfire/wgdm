@@ -5,7 +5,8 @@ import { MemStorage } from "./storage";
 import { setupStaticFiles } from "./static";
 
 const app = express();
-const port = process.env.PORT || 3000;
+//const port = process.env.PORT || "3000";
+const port = 3000;
 
 // Middleware
 app.use(cors());
@@ -19,7 +20,7 @@ const storage = new MemStorage();
 app.use(createRoutes(storage));
 
 // Health check
-app.get("/health", (req, res) => {
+app.get("/health", (_req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
