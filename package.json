@@ -4,7 +4,7 @@
   "description": "A modern personal content management system built with JavaScript",
   "main": "server/index.js",
   "scripts": {
-    "start": "ts-node server/index.ts",
+    "start": "tsx server/index.ts",
     "dev": "concurrently \"tsx server/index.ts\" \"vite\"",
     "build": "vite build",
     "build:server": "tsc server/index.ts --outDir dist-server --module commonjs --target es2020 --moduleResolution node --esModuleInterop true --allowSyntheticDefaultImports true",
